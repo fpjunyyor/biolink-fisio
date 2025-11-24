@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr(a). Nome – Fisioterapeuta</title>
+
+  <style>
+    :root {
+      --primary: #4A90E2;
+      --secondary: #43B5A0;
+      --bg: #f3f7fb;
+      --text: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: radial-gradient(circle at top, #e1f0ff, #f5f7fb);
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      max-width: 380px;
+      width: 100%;
+      background: #fff;
+      padding: 24px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 4px solid var(--primary);
+      object-fit: cover;
+      margin-top: -60px;
+      background: #ddd;
+    }
+
+    .title {
+      margin: 12px 0 4px;
+      font-size: 20px;
+      color: var(--text);
+      font-weight: bold;
+    }
+
+    .subtitle {
+      margin: 0 0 16px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      background: rgba(67,181,160,0.08);
+      color: var(--secondary);
+      margin-bottom: 18px;
+    }
+
+    .btn {
+      display: block;
+      text-decoration: none;
+      background: var(--primary);
+      color: #fff;
+      padding: 12px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      font-size: 15px;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(74,144,226,0.35);
+      transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.2s;
+    }
+
+    .btn.whatsapp {
+      background: #25D366;
+      box-shadow: 0 4px 12px rgba(37,211,102,0.35);
+    }
+
+    .btn.secondary {
+      background: #fff;
+      color: var(--primary);
+      border: 1px solid #dbe6f5;
+      box-shadow: none;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 7px 18px rgba(0,0,0,0.12);
+    }
+
+    .btn.secondary:hover {
+      background: #f5f8ff;
+    }
+
+    .section-title {
+      text-align: left;
+      margin: 18px 0 8px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #999;
+      font-weight: bold;
+    }
+
+    .services {
+      text-align: left;
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .services li {
+      margin-bottom: 4px;
+    }
+
+    .testimonials {
+      background: #f5f8ff;
+      border-radius: 14px;
+      padding: 10px 12px;
+      font-size: 12px;
+      text-align: left;
+      color: #555;
+    }
+
+    .testimonials p {
+      margin: 4px 0;
+    }
+
+    .stars {
+      color: #f7b500;
+      font-size: 13px;
+    }
+
+    .footer {
+      margin-top: 18px;
+      font-size: 11px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+
+    <!-- FOTO DO FISIO -->
+    <img class="avatar" src="FOTO_DO_FISIO.jpg" alt="Foto do Fisioterapeuta">
+
+    <!-- NOME E SUBTÍTULO -->
+    <div class="title">Dr(a). Nome do Fisioterapeuta</div>
+    <div class="subtitle">Fisioterapeuta • Pilates • Reabilitação Funcional</div>
+
+    <div class="badge">Atendimento humanizado em dor e movimento</div>
+
+    <!-- BOTÕES PRINCIPAIS -->
+    <a class="btn whatsapp" href="https://wa.me/55SEU_NUMERO?text=Ol%C3%A1%2C+gostaria+de+agendar+uma+avalia%C3%A7%C3%A3o.">
+      📲 Agendar pelo WhatsApp
+    </a>
+
+    <a class="btn" href="#servicos">📘 Ver serviços</a>
+    <a class="btn secondary" href="https://www.google.com/maps">📍 Ver localização</a>
+    <a class="btn secondary" href="https://instagram.com/SEUINSTAGRAM">📸 Ver Instagram</a>
+
+    <!-- SERVIÇOS -->
+    <div id="servicos" class="section-title">Serviços</div>
+    <ul class="services">
+      <li>✅ Avaliação postural completa</li>
+      <li>✅ Pilates solo e em equipamentos</li>
+      <li>✅ Reabilitação de lesões de coluna</li>
+      <li>✅ Fisioterapia pós-cirúrgica</li>
+      <li>✅ Exercícios personalizados para dor crônica</li>
+    </ul>
+
+    <!-- DEPOIMENTOS -->
+    <div class="section-title">Depoimentos</div>
+    <div class="testimonials">
+      <p class="stars">★★★★★</p>
+      <p>“Tinha dor lombar há anos. Em poucas semanas já senti alívio e hoje me movimento sem medo.”</p>
+      <p><strong>– Maria, 42 anos</strong></p>
+      <hr>
+      <p class="stars">★★★★★</p>
+      <p>“Profissional atencioso, explica tudo com calma e passa muita confiança durante o tratamento.”</p>
+      <p><strong>– João, 36 anos</strong></p>
+    </div>
+
+    <div class="footer">
+      Mini-site criado por Fernando Jr. – Soluções para Fisioterapeutas
+    </div>
+
+  </div>
+
+</body>
+</html>
